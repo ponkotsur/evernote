@@ -1,0 +1,6 @@
+<ul>
+  <% @notes.each do |note| %>
+    <li><%= link_to "#{note.name}" %></li>
+  <% end %>
+</ul> 
+<%= link_to "test","/notebooks/update_notebook",:method => :post %>

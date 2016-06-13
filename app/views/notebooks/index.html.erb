@@ -1,0 +1,6 @@
+<ul>
+  <% @notebooks.each do |notebook| %>
+    <li><%= link_to "#{notebook.name}","/notebooks/#{notebook.id}" %></li>
+  <% end %>
+</ul> 
+<%= link_to "test","/notebooks/update_notebooks",:method => :post %>
